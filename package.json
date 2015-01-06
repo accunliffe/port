@@ -1,6 +1,6 @@
 {
-  "name": "incarcc",
-  "version": "0.0.1-95",
+  "name": "acdesign",
+  "version": "0.0.1-103",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -11,7 +11,7 @@
     "stylus": "*",
     "angular": "*"
   },
-  "subdomain": "incarcc",
+  "subdomain": "acdesign",
   "engines": {
     "node": "0.10.x"
   }
