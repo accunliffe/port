@@ -50,7 +50,7 @@ function ModalCtrl($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'partials/audio-modal',
+      templateUrl: 'partials/contact-modal',
       controller: ModalInstanceCtrl,
       size: size,
       resolve: {
