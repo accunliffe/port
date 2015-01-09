@@ -71,58 +71,14 @@ block body
           p#float-l Connect With Me on LinkedIn
           a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
 
-  nav#nav.navbar.row-fluid.show-phone.show-tablet.hidden-desktop(role='navigation')
-      .rmenu
+  .mobilewrapper.show-phone.show-tablet.hidden-desktop
+    .mobileBody
+      .mobileContent  
+        p content
+      .mobileTab
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
-        h3.navtext1.hidden-phone Andrew Cunliffe Design (Under Construction)
-        img.logo2(src='/images/logo1.png')
-        ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
-          li#div1(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
-          li.divider(role='presentation')
-          li#div2(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
-          li.divider(role='presentation')
-          li#div3(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
-          li.divider(role='presentation')
-          li#div4(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
-  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop#pbox
-    section.module.parallax.parallax-1
-      .container
-        h1 Title
-    section.module.content
-      .container
-        h2 Content
-        p Content
-    section.module.parallax.parallax-2
-      .container
-        h1 Title
-    section.module.content
-      .container
-        h2 Content
-        p Content
-    section.module.parallax.parallax-3
-      .container
-        h1 Title
-    section.module.content
-      .container
-        h2 Content
-        p Content
-    section.module.parallax.parallax-4
-      .container
-        h1 Title
-    section.module.content
-      .container
-        h2 Content
-        p Content
-     nav.navbar#footer.row-fluid
-      .iconwrap
-        p#float-l Connect With Me on LinkedIn
-        a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
 
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')
