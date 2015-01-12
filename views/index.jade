@@ -84,14 +84,28 @@ block body
           button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
      
 
-  .mobilewrapper.show-phone.show-tablet.hidden-desktop
+  .mobilewrapper.container-fluid.show-phone.show-tablet.hidden-desktop
     .mobileBody
       .mobileContent  
-        p content
-      .mobileTab
-        .menubutton(type='button', data-toggle='dropdown')
-          img.logo3(src='/images/3lines.png')
-          h3.menutext Menu
+        h3.menutext Andrew Cunliffe Design
+    nav#nav.navbar.mobile.navbar-fixed-bottom.row-fluid(role='navigation')
+      .container.dropup
+        .menubutton.mobile(type='button', data-toggle='dropdown')
+          img.logo4(src='/images/3linesMobile.png')
+        h3.navtext1.hidden-phone Andrew Cunliffe Design
+        a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
+        ul#menu.dropdown-menu.dropup(role='menu')
+          li#div1(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
+          li.divider(role='presentation')
+          li#div2(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
+          li.divider(role='presentation')
+          li#div3(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
+          li.divider(role='presentation')
+          li#div4(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
 
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')
