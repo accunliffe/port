@@ -115,15 +115,21 @@ img.inline.ts
   max-height 600px
   max-width 100%
   
-
+p.line
+  height 10px
+  margin-bottom 0 !important
+  padding 0 0 0 0
 
 section
   &.module   
     &:last-child
       margin-bottom 0      
     h2
-      margin-bottom 60px
+      margin-bottom 30px
       font-size 60px
+      padding-bottom 0
+    h3
+      font-size 40px
       padding-bottom 30px
     p
       display inline-block
@@ -156,7 +162,7 @@ section
       
     &.content
       padding 0 0
-      height 1000px
+      height 950px
       background-color white
     &.contentM
       padding 0 0
@@ -176,30 +182,26 @@ section
       h1
         color rgba(255, 255, 255, 0.8)
         font-size 48px
-        line-height 600px
+        line-height 800px
         font-weight 700
         text-align center
         text-transform uppercase
         text-shadow 0 0 10px rgba(0, 0, 0, 0.2)
-        font-size 96px        
+        font-size 96px  
     &.parallax-1
-      background-image url("/images/bridgebw.jpg")
+      background-image url("/images/bridge.jpg")
     &.parallax-2
-      background-image url("/images/lakeBW.jpg")
+      background-image url("/images/lakeWide.jpg")
     &.parallax-3
-      background-image url("/images/citybw.jpg")
+      background-image url("/images/citySky.jpg")
     &.parallax-4
-      background-image url("/images/FFBW.jpg")
+      background-image url("/images/FF.jpg")
+    &.parallax-5
+      background-image url("/images/palace.jpg")
+      
     
 
-nav.navbar#footer
-  background-color rgba(110,110,110,0.75)
-  height 100px
-  margin 0 auto 0 auto
-  position relative
-  display block
-  z-index 1
-  text-align center
+
 
 .shift-on-the-icon
   -webkit-transition background-image cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
@@ -233,8 +235,9 @@ p#float-l2
   color white
 
 .linkedin-icon
+  float right
   display inline-block
-  margin 20px 30px 0 5px
+  margin 10px 15px 10px 5px
   width 48px
   height 48px
   vertical-align center
