@@ -20,7 +20,10 @@ block body
             a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
           li.divider(role='presentation')
           li#div4(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div4') True Spirit
+          li.divider(role='presentation')
+          li#div5(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally
     .mainwrapper(ng-controller='BtnCtrl as btn')  
       section.module.parallax.parallax-1.top
         .container
@@ -106,6 +109,9 @@ block body
           li.divider(role='presentation')
           li#div4(role='presentation')
             a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
+          li.divider(role='presentation')
+          li#div5(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally
 
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')
@@ -137,4 +143,8 @@ block body
   script.
     $(document).ready(function() {
       $('#div4').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div5').localScroll({duration:1700});
     });
