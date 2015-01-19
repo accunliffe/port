@@ -99,12 +99,12 @@ block body
           img.logo4(src='/images/3linesMobile.png')
         h3.navtext1.hidden-phone Andrew Cunliffe Design
         a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
-        ul#menu.dropdown-menu.dropup(role='menu')
-          li#div1(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#aboutMe2', data-id='div1') About Me
+        ul#menu.dropdown-menu.dropup(role='menu', aria-labelledby='dropdownMenu1')
+          li#div6(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#aboutMe2', data-id='div6') About Me
           li.divider(role='presentation')
-          li#div2(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#stockickr2', data-id='div2') stockickr  
+          li#div7(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#stockickr2', data-id='div7') stockickr  
           li.divider(role='presentation')
           li#div3(role='presentation')
             a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
@@ -116,16 +116,17 @@ block body
             a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally          
     .mobileBody
       .mobileContent  
-        h3.menutext.mobile Andrew Cunliffe Design
+        .container-fluid
+          img.img-responsive(src='/images/bridgeMobile.jpg ')
         .container-fluid.white(ng-controller='ModalCtrl')
           h1#aboutMe2 About Me
           h4 I'm Currently A Student In General Assembly's User Experienve Design Immersive Program
-          img.inline(src='/images/cemetary2.png')
+          img.inline.ts.mobile(src='/images/cemetary2.png')
           <br><br>
           p The course is 10 weeks long, and I am just about to begin my sixth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, attempted my own startup, and worked as a front end developer.
-          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
-        .container-fluid.white#stockickr2(ng-controller='ModalCtrl2')
-          h1 stockickr
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Contact and Resume
+        .container-fluid.white(ng-controller='ModalCtrl2')
+          h1#stockickr2 stockickr
           h4 Mobile Stock Trading Patform
           img.inline.ts(src='/images/SKiOS1stScreenTab.png')
           <br><br>  
@@ -169,4 +170,13 @@ block body
   script.
     $(document).ready(function() {
       $('#div5').localScroll({duration:1700});
+    });
+
+  script.
+    $(document).ready(function() {
+      $('#div6').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div7').localScroll({duration:1700});
     });
