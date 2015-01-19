@@ -172,11 +172,7 @@ var ModalInstanceCtrl = function ($scope, $modalInstance, items) {
   $scope.selected = {
     item: $scope.items[0]
   };
-
-  //$scope.upload = function () {
-    //$modalInstance.close($scope.selected.item);
-  //};
-
+  
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
