@@ -70,11 +70,11 @@ block body
       section.module.content
         p#project2
         h2 True Spirit
-        h3 Effiecent, Ellegant And Intuitive Ecommerce 
+        h3 Effiecent, Ellegant And Intuitive eCommerce 
         p.left
           img.inline.ts(src='/images/1trueSpirit0.png')
         p.verticalLine
-        p.right(ng-controller='ModalCtrl4') Our second project was to design an ecommerce site for a school uniform retailer, based on the needs of personas outlined in the project's brief, as well as by interviewing real users on our own.
+        p.right(ng-controller='ModalCtrl4') Our second project was to design an eCommerce site for a school uniform retailer, based on the needs of personas outlined in the project's brief, as well as by interviewing real users on our own.
           <br><br>
           button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
       section.module.parallax.parallax-5
@@ -92,10 +92,7 @@ block body
           button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
      
 
-  .mobilewrapper.container-fluid.show-phone.show-tablet.hidden-desktop
-    .mobileBody
-      .mobileContent  
-        h3.menutext Andrew Cunliffe Design
+  .mobilewrapper.container-fluid.show-phone.show-tablet.hidden-desktop(ng-controller='AppCtrl as app')
     nav#nav.navbar.mobile.navbar-fixed-bottom.row-fluid(role='navigation')
       .container.dropup
         .menubutton.mobile(type='button', data-toggle='dropdown')
@@ -104,10 +101,10 @@ block body
         a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
         ul#menu.dropdown-menu.dropup(role='menu')
           li#div1(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
+            a(role='menuitem', tabindex='-1', href='#aboutMe2', data-id='div1') About Me
           li.divider(role='presentation')
           li#div2(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
+            a(role='menuitem', tabindex='-1', href='#stockickr2', data-id='div2') stockickr  
           li.divider(role='presentation')
           li#div3(role='presentation')
             a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
@@ -116,7 +113,27 @@ block body
             a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
           li.divider(role='presentation')
           li#div5(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally
+            a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally          
+    .mobileBody
+      .mobileContent  
+        h3.menutext.mobile Andrew Cunliffe Design
+        .container-fluid.white(ng-controller='ModalCtrl')
+          h1#aboutMe2 About Me
+          h4 I'm Currently A Student In General Assembly's User Experienve Design Immersive Program
+          img.inline(src='/images/cemetary2.png')
+          <br><br>
+          p The course is 10 weeks long, and I am just about to begin my sixth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, attempted my own startup, and worked as a front end developer.
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+        .container-fluid.white#stockickr2(ng-controller='ModalCtrl2')
+          h1 stockickr
+          h4 Mobile Stock Trading Patform
+          img.inline.ts(src='/images/SKiOS1stScreenTab.png')
+          <br><br>  
+          p I came up with the idea of a social stock trading application while I was actively trading securities and blogging my trades.<br><br>          
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+
+
+
 
   script(src='js/lib/angular/angular.js')
   script(src='js/lib/angular/angular-route.js')

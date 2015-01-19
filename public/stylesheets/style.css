@@ -265,7 +265,6 @@ p#float-l2 {
   width: auto;
   height: 50px;
   border-color: #fff;
-  float: left;
 }
 .moder {
   margin: 2.5% 32.5px 0 32.5px !important;
@@ -303,6 +302,9 @@ p#float-l2 {
 .mobileBody {
   height: 100%;
 }
+h3.menutext.mobile {
+  padding-bottom: 40px;
+}
 #nav.navbar.mobile {
   background-color: rgba(110,110,110,0.4);
   width: 100%;
@@ -324,4 +326,22 @@ img.logo4 {
 .menubutton.mobile {
   width: 40px;
   margin: 15px 0 0 10px;
+}
+.container-fluid.white {
+  background-color: #fff;
+  height: auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.container-fluid.white p {
+  font-family: 'Raleway';
+}
+.container-fluid.white h1 {
+  font-family: 'Raleway';
+}
+.container-fluid.white h4 {
+  font-family: 'Raleway';
+}
+button#btn.btn.btn-primary.mobile {
+  margin-bottom: 50px;
 }
