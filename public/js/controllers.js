@@ -74,7 +74,7 @@ function ModalCtrl2($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'partials/phone-modal',
+      templateUrl: 'partials/stockickr-modal',
       controller: ModalInstanceCtrl,
       size: size,
       resolve: {
@@ -98,7 +98,7 @@ function ModalCtrl3($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'partials/maps-modal',
+      templateUrl: 'partials/poolshrk-modal',
       controller: ModalInstanceCtrl,
       size: size,
       resolve: {
@@ -122,7 +122,7 @@ function ModalCtrl4($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'partials/settings-modal',
+      templateUrl: 'partials/TS-modal',
       controller: ModalInstanceCtrl,
       size: size,
       resolve: {

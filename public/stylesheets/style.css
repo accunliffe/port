@@ -265,6 +265,7 @@ p#float-l2 {
   width: auto;
   height: 50px;
   border-color: #fff;
+  float: left;
 }
 .moder {
   margin: 2.5% 32.5px 0 32.5px !important;
