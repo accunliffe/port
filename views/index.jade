@@ -35,7 +35,7 @@ block body
         p.left
           img.inline(src='/images/cemetary2.png')
         p.verticalLine
-        p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am just about to begin my fifth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, attempted my own startup, and worked as a front end developer.
+        p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am just about to begin my fifth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, attempted my own startup, and worked as a front end developer.<br><br>All the content on this site is an original Andrew Cunliffe creation.
           <br><br>
           button#btn.btn.btn-primary(ng-controller='BtnCtrl as btn', type='button', ng-model='singleModel', ng-click="open()") Contact Me
       section.module.parallax.parallax-2
@@ -87,10 +87,9 @@ block body
         p.left
           img.inline.ts(src='/images/RMFirst.png')
         p.verticalLine
-        p.right(ng-controller='ModalCtrl5') Our second project was to design an ecommerce site for a school uniform retailer, based on the needs of personas outlined in the project's brief, as well as by interviewing real users on our own.
+        p.right(ng-controller='ModalCtrl5') Our third project was to design a GeoCaching application for long time atlas, map, and GPS maker Rand McNally.
           <br><br>
-          button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
-     
+          button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study     
 
   .mobilewrapper.container-fluid.show-phone.show-tablet.hidden-desktop(ng-controller='AppCtrl as app')
     nav#nav.navbar.mobile.navbar-fixed-bottom.row-fluid(role='navigation')
@@ -106,32 +105,56 @@ block body
           li#div7(role='presentation')
             a(role='menuitem', tabindex='-1', href='#stockickr2', data-id='div7') stockickr  
           li.divider(role='presentation')
-          li#div3(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
+          li#div8(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project12', data-id='div8') PoolShrk  
           li.divider(role='presentation')
-          li#div4(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
+          li#div9(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project23', data-id='div9') True Spirit
           li.divider(role='presentation')
-          li#div5(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally          
+          li#div10(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project34', data-id='div10') Rand McNally          
     .mobileBody
       .mobileContent  
         .container-fluid
           h3.menutext.mobile Andrew Cunliffe Design
-        .container-fluid.white(ng-controller='ModalCtrl')
-          h1#aboutMe2 About Me
+        .container-fluid.white#aboutMe2(ng-controller='ModalCtrl')
+          h1 About Me
           h4 I'm Currently A Student In General Assembly's User Experience Design Immersive Program
           img.inline.ts.mobile(src='/images/cemetary2.png')
           <br><br>
           p The course is 10 weeks long, and I am just about to begin my sixth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, attempted my own startup, and worked as a front end developer.
           button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Contact and Resume
-        .container-fluid.white(ng-controller='ModalCtrl2')
-          h1#stockickr2 stockickr
+        .container-fluid.white#stockickr2(ng-controller='ModalCtrl2')
+          h1 stockickr
           h4 Mobile Stock Trading Patform
           img.inline.ts(src='/images/SKiOS1stScreenTab.png')
           <br><br>  
           p I came up with the idea of a social stock trading application while I was actively trading securities and blogging my trades.<br><br>          
           button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+        .container-fluid.white#project12(ng-controller='ModalCtrl3')
+          h1 PoolShrk
+          h4 Teach Yourself To Be A Better Pool Player With Your Smartphone
+          img.inline.ts(src='/images/poolShrk.png')
+          <br><br>  
+          p This was our first project at UXDi, designed and presented during the first week. It was done all by hand, all sketching, no digetizing. Our task was to partner up and find a piece of our partner's life that could be improved with a mobile application.<br><br>My partner Ross wanted to get better at pool, so I designed an app where the user takes takes a picture of the table, answers whether he is playing stripes or solids, then determines what the best shot is for him to take, then tells him how and where to strike the Q-ball.<br><br>         
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+        .container-fluid.white#project23(ng-controller='ModalCtrl4')
+          h1 TrueSpirit
+          h4 Effiecent, Ellegant And Intuitive eCommerce
+          img.inline.ts(src='/images/1trueSpirit0.png')
+          <br><br>  
+          p Our second project was to design an eCommerce site for a school uniform retailer, based on the needs of personas outlined in the project's brief, as well as by interviewing real users on our own.<br><br>          
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+        .container-fluid.white#project34(ng-controller='ModalCtrl5')
+          h1 Rand McNally
+          h4 A GeoCaching App For Educators And Explorers
+          img.inline.ts(src='/images/RMFirst.png')
+          <br><br>  
+          p Our third project was to design a GeoCaching application for long time atlas, map, and GPS maker Rand McNally.<br><br>          
+          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study
+        .container-fluid.white
+          h4 This is an Andrew Cunliffe creation
+
 
 
   script(src='js/lib/angular/angular.js')
@@ -177,4 +200,16 @@ block body
   script.
     $(document).ready(function() {
       $('#div7').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div8').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div9').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div10').localScroll({duration:1700});
     });

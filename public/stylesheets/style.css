@@ -27,6 +27,9 @@ body {
   background-size: cover;
   background-position: left top;
 }
+.row-fluid {
+  text-align: center;
+}
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -314,7 +317,7 @@ button.btn.btn-warning {
 }
 h3.menutext.mobile {
   line-height: 60px;
-  margin-top: 0;
+  margin-top: 10px;
 }
 #nav.navbar.mobile {
   background-color: rgba(110,110,110,0.4);
@@ -342,7 +345,7 @@ img.logo4 {
 .container-fluid.white {
   background-color: #fff;
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   text-align: center;
 }
 .container-fluid.white p {
