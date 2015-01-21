@@ -294,9 +294,7 @@ p#float-l2 {
 }
 .modal-body {
   height: 98%;
-}
-.modal-content {
-  height: 1000px;
+  text-align: center;
 }
 h3.modal-title {
   width: auto;
@@ -307,6 +305,46 @@ button.btn.btn-warning {
   background-color: rgba(214,214,214,0.6);
   border-color: #fff;
   color: #444345;
+}
+.verticalLine {
+  width: 1%;
+  height: 600px;
+  border-right: medium solid #d3d3d3;
+  display: inline-block;
+  position: relative;
+}
+.left {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 48.5%;
+}
+.right {
+  float: right !important;
+  display: inline-block;
+  position: relative;
+  width: 48.5%;
+  text-align: center;
+}
+h4.modalContent.topper {
+  max-width: 1000px;
+  border-bottom: 1px solid #d3d3d3;
+  text-align: left;
+  margin: 0 auto 10px auto;
+  padding-top: 40px;
+}
+h4.modalContent {
+  max-width: 1000px;
+  border-bottom: 1px solid #d3d3d3;
+  text-align: left;
+  margin: 0 auto 10px auto;
+  padding-top: 40px;
+}
+p.moder1 {
+  text-align: left;
+  margin: 15px auto 25px auto;
+  max-width: 1000px;
+  font-size: 120%;
 }
 .mobilewrapper {
   height: 100%;
@@ -352,6 +390,7 @@ img.logo4 {
   font-family: 'Raleway';
   margin: 0 10px 15px 10px;
   text-align: left;
+  font-size: 120%;
 }
 .container-fluid.white h1 {
   font-family: 'Raleway';
