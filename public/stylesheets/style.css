@@ -59,10 +59,10 @@ img.logo3 {
   float: left;
   display: inline-block;
   padding-top: 6px;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-bottom: 7px;
   height: 40px;
-  min-width: 80px;
+  min-width: 60px;
   cursor: pointer;
 }
 img.logo5 {
@@ -70,7 +70,7 @@ img.logo5 {
   position: relative;
   display: inline-block;
   padding-right: 15px;
-  padding-top: 10px;
+  padding-top: 15px;
   height: 4%;
   width: 4%;
   min-width: 80px;
@@ -102,7 +102,7 @@ h3.navtext {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 3px;
 }
-.menubutton {
+.menubutton.desktop {
   text-align: left;
   display: inline-block;
   float: left;
@@ -405,7 +405,10 @@ img.logo4 {
 }
 .menubutton.mobile {
   width: 40px;
-  margin: 20px 0 0 10px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  padding: 25px 0 0 10px;
 }
 .container-fluid.white {
   background-color: #fff;
