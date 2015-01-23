@@ -43,6 +43,7 @@ body {
   min-width: 100%;
   text-align: center;
   border-bottom: 1px solid #fff;
+  height: 80px;
 }
 img.logo2 {
   float: right;
@@ -69,7 +70,7 @@ img.logo5 {
   position: relative;
   display: inline-block;
   padding-right: 15px;
-  padding-top: 12.5px;
+  padding-top: 10px;
   height: 4%;
   width: 4%;
   min-width: 80px;
@@ -79,7 +80,7 @@ h3.navtext1 {
   display: inline-block;
   font-family: 'Arca';
   color: #fff;
-  padding-top: 0.5%;
+  padding-top: 1%;
   padding-bottom: 0;
   letter-spacing: 3px;
   padding-right: 2.5%;
@@ -105,7 +106,7 @@ h3.navtext {
   text-align: left;
   display: inline-block;
   float: left;
-  padding-top: 1%;
+  padding-top: 20px;
   padding-bottom: 1%;
 }
 h3.menutext {
@@ -116,7 +117,7 @@ h3.menutext {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 3px;
   font-size: 16px;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 ul.dropdown-menu {
   background-color: rgba(110,110,110,0.55);
