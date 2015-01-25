@@ -219,7 +219,7 @@ section.module.parallax {
 section.module.parallax.top {
   padding-top: 10%;
 }
-@media screen and (min-width: 2300px) {
+@media screen and (min-height: 1000px) {
   section.module.parallax.top {
     padding-top: 20%;
   }
