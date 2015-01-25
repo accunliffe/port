@@ -76,14 +76,14 @@ img.logo5.desktop {
   min-width: 80px;
   cursor: pointer;
 }
-@media screen and (min-width: 1930px) {
+@media screen and (min-width: 1830px) {
   img.logo5.desktop {
     padding-top: 8px;
   }
 }
 @media screen and (min-width: 2300px) {
   img.logo5.desktop {
-    padding-top: 3px;
+    padding-top: 1.5px;
   }
 }
 h3.navtext1 {
