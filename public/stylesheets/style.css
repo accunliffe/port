@@ -217,10 +217,15 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax.top {
-  padding-top: 20%;
+  padding-top: 10%;
+}
+@media screen and (min-width: 2300px) {
+  section.module.parallax.top {
+    padding-top: 20%;
+  }
 }
 section.module.parallax.top h1 {
-  margin-bottom: 55%;
+  margin-bottom: 75%;
   line-height: 100%;
 }
 section.module.parallax h1 {
