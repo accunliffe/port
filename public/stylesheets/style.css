@@ -73,7 +73,7 @@ img.logo5.desktop {
   padding-top: 10px;
   height: 4%;
   width: 4%;
-  min-width: 80px;
+  min-width: 60px;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
 }
@@ -443,7 +443,7 @@ img.logo5.mobile {
   padding-top: 15px;
   height: 4%;
   width: 4%;
-  min-width: 80px;
+  min-width: 60px;
   cursor: pointer;
 }
 .menubutton.mobile {
