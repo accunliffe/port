@@ -98,7 +98,7 @@ function ModalCtrl3($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'partials/poolshrk-modal',
+      templateUrl: 'partials/port-modal',
       controller: ModalInstanceCtrl,
       size: size,
       resolve: {
