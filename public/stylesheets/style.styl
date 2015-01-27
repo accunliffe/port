@@ -73,9 +73,8 @@ img.logo5.desktop
   display inline-block  
   padding-right 15px
   padding-top 10px
-  height 4%
-  width 4%
   min-width 60px
+  max-height 70px
   cursor pointer
   -webkit-font-smoothing antialiased
 
@@ -140,6 +139,8 @@ ul
 
 
 img.inline.ts
+  @media screen and (min-width: 900px)
+    max-width 40%
   max-height 600px
   max-width 100%
   
@@ -337,14 +338,29 @@ button.btn.btn-warning
   
 button.btn.btn-warning.prot
   float none
-  background-color rgba(84,115,240,0.60)
+  background-color rgba(84,115,240,0.90)
   color white
   position relative
   margin-top 30px
   height 80px
-  width 200px
+  width 10%
   font-size 120%
-
+  min-width 200px
+  display inline-block
+  
+button.btn.btn-warning.bottom
+  background-color rgba(214,214,214,0.90)  
+  border-color #ffffff
+  color #444345
+  float none
+  position relative
+  margin-top 30px
+  height 80px
+  width 10%
+  font-size 120%
+  min-width 200px
+  display inline-block
+  
 .verticalLine
   width 1%
   height 600px
