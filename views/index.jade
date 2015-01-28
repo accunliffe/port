@@ -35,9 +35,9 @@ block body
         p.left
           img.inline(src='/images/cemetary2.png')
         p.verticalLine
-        p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division.<br><br>All the content on this site is an original Andrew Cunliffe creation.
-          <br><br>
+        p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division.<br><br>You can read more about me, or you can scroll down.<br><br>
           button#btn.btn.btn-primary(ng-controller='BtnCtrl as btn', type='button', ng-model='singleModel', ng-click="open()")  More About Me and Resume
+
       section.module.parallax.parallax-2
         .container
           h1 stockickr
@@ -90,6 +90,8 @@ block body
         p.right(ng-controller='ModalCtrl5') Our third project was to design a GeoCaching application for long time atlas, map, and GPS maker Rand McNally.
           <br><br>
           button#btn.btn.btn-primary(type='button', ng-model='singleModel', ng-click="open()") Continue Case Study     
+      .container-fluid.white
+          h4 This is an Andrew Cunliffe creation
 
   .mobilewrapper.container-fluid.show-phone.show-tablet.hidden-desktop(ng-controller='AppCtrl as app')
     nav#nav.navbar.mobile.navbar-fixed-bottom.row-fluid(role='navigation')
@@ -125,6 +127,7 @@ block body
           <br><br>
           p The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division. Inside you can read more about me and download my resume.<br><br>All the content on this site is an original Andrew Cunliffe creation.
           button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") More About Me and Resume
+          p Or, you can scroll down.
         .container-fluid.white#stockickr2(ng-controller='ModalCtrl2')
           h1 stockickr
           h4 Mobile Stock Trading Patform
@@ -175,23 +178,23 @@ block body
 
   script.
     $(document).ready(function() {
-      $('#div1').localScroll({duration:3000});
+      $('#div1').localScroll({duration:2000});
     });
   script.
     $(document).ready(function() {
-      $('#div2').localScroll({duration:3000});
+      $('#div2').localScroll({duration:2000});
     });
   script.
     $(document).ready(function() {
-      $('#div3').localScroll({duration:3000});
+      $('#div3').localScroll({duration:2000});
     });
   script.
     $(document).ready(function() {
-      $('#div4').localScroll({duration:3000});
+      $('#div4').localScroll({duration:2000});
     });
   script.
     $(document).ready(function() {
-      $('#div5').localScroll({duration:3000});
+      $('#div5').localScroll({duration:2000});
     });
 
   script.
