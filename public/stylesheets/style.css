@@ -145,6 +145,12 @@ ul.dropdown-menu {
   color: #fff;
   font-size: 120%;
 }
+.dropdown-menu li.contact a {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'MSans';
+  color: #d0dcf7;
+  font-size: 120%;
+}
 img.inline.ts {
   max-height: 600px;
   max-width: 100%;
@@ -154,6 +160,12 @@ img.inline.ts {
   img.inline.ts {
     max-width: 40%;
   }
+}
+img.inline.me {
+  max-height: 700px;
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 5px;
 }
 img.inline.ts.main {
   max-height: 500px;

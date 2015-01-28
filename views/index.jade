@@ -24,6 +24,12 @@ block body
           li.divider(role='presentation')
           li#div5(role='presentation')
             a(role='menuitem', tabindex='-1', href='#project3', data-id='div5') Rand McNally
+          li.divider(role='presentation')
+          li.contact(role='presentation')
+            a(role='menuitem', tabindex='-1', href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank') Electronic Mail
+          li.divider(role='presentation')
+          li.contact(role='presentation')
+            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/rne0kikfox7rxqa/ACResumeUX.docx?dl=0', target='_blank') Resume
     .mainwrapper(ng-controller='BtnCtrl as btn')  
       section.module.parallax.parallax-1.top
         .container
@@ -33,7 +39,7 @@ block body
         h2 About Me
         h3 I'm Currently A Student In General Assembly's User Experience Design Immersive Program     
         p.left
-          img.inline(src='/images/me1.png')
+          img.inline.me(src='/images/me1.png')
         p.verticalLine
         p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division.<br><br>You can read more about me, or you can scroll down.<br><br>
           button#btn.btn.btn-primary(ng-controller='BtnCtrl as btn', type='button', ng-model='singleModel', ng-click="open()")  More About Me and Resume
@@ -115,7 +121,13 @@ block body
             a(role='menuitem', tabindex='-1', href='#project23', data-id='div9') True Spirit
           li.divider(role='presentation')
           li#div10(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project34', data-id='div10') Rand McNally          
+            a(role='menuitem', tabindex='-1', href='#project34', data-id='div10') Rand McNally
+          li.divider(role='presentation')
+          li.contact(role='presentation')
+            a(role='menuitem', tabindex='-1', href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank') Email
+          li.divider(role='presentation')
+          li.contact(role='presentation')
+            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/rne0kikfox7rxqa/ACResumeUX.docx?dl=0', target='_blank') Resume          
     .mobileBody
       .mobileContent  
         .container-fluid
