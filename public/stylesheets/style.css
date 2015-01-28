@@ -379,6 +379,20 @@ button.btn.btn-warning.prot {
   font-size: 120%;
   min-width: 200px;
   display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
+button.btn.btn-warning.resume {
+  float: none;
+  background-color: rgba(240,173,78,0.9);
+  color: #fff;
+  position: relative;
+  margin-top: 30px;
+  height: 80px;
+  width: 10%;
+  font-size: 120%;
+  min-width: 200px;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
 }
 button.btn.btn-warning.bottom {
   background-color: rgba(214,214,214,0.9);
@@ -392,6 +406,7 @@ button.btn.btn-warning.bottom {
   font-size: 120%;
   min-width: 200px;
   display: inline-block;
+  margin: 10px 10px 10px 10px;
 }
 .verticalLine {
   width: 1%;
@@ -432,6 +447,24 @@ p.moder1 {
   margin: 15px auto 25px auto;
   max-width: 1000px;
   font-size: 120%;
+}
+p.moder2 {
+  text-align: center;
+  margin: 30px auto 30px auto;
+  max-width: 1000px;
+  font-size: 120%;
+}
+.zoom {
+  width: 80%;
+  height: 80%;
+  -webkit-transition: 1.4s ease-in-out;
+  -moz-transition: 1.4s ease-in-out;
+  -o-transition: 1.4s ease-in-out;
+  transition: 1.4s ease-in-out;
+}
+.zoom:hover {
+  width: 100% !important;
+  height: 100% !important;
 }
 .mobilewrapper {
   height: 100%;

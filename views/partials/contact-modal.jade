@@ -1,11 +1,13 @@
 .modal-header
-  h3.modal-title Contact
+  h3.modal-title About Me
   button.btn.btn-warning(ng-click='cancel()') Close
 .modal-body
-  a.btn.btn-warning(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_top') Send Mail
-    
-    
-
+  .row-fluid
+   a(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank')
+    button.btn.btn-warning.prot Send Electronic Mail
+   a(href=href='https://www.dropbox.com/s/rne0kikfox7rxqa/ACResumeUX.docx?dl=0', target='_blank')
+    button.btn.btn-warning.resume Resume
+   button.btn.btn-warning.bottom(ng-click='cancel()') Close
   
 
 
