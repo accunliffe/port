@@ -242,12 +242,26 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
+@media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2) {
+  section.module.parallax {
+    height: 800px;
+  }
+}
 section.module.parallax.top {
   padding-top: 10%;
 }
 @media screen and (min-height: 1000px) {
   section.module.parallax.top {
     padding-top: 20%;
+  }
+}
+@media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2) {
+  section.module.parallax.top {
+    padding-top: 15%;
+  }
+  section.module.parallax.top h1 {
+    margin-bottom: 25%;
+    line-height: 100%;
   }
 }
 section.module.parallax.top h1 {
