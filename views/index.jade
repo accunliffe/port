@@ -29,20 +29,22 @@ block body
             a(role='menuitem', tabindex='-1', href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank') Electronic Mail
           li.divider(role='presentation')
           li.contact(role='presentation')
-            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/paaont6vwu47jlz/ACResumeUX2.docx?dl=0', target='_blank') Résumé
-    .mainwrapper(ng-controller='BtnCtrl as btn')  
-      section.module.parallax.parallax-1.top
+            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/dicsqh33smmcp42/ACResumeUX3.pdf?dl=0', target='_blank') Résumé
+    .mainwrapper(ng-controller='BtnCtrl as btn', ng-cloak='')  
+      section.module.parallax.parallax-1.top(ng-cloak='')
         .container
           h1 Andrew Cunliffe Design        
       section.module.content#aboutMe
         p.line
         h2 About Me
-        h3 I'm Currently A Student In General Assembly's User Experience Design Immersive Program     
+        h3 I'm an interaction designer looking to solve real world problems through design.     
         p.left
           img.inline.me(src='/images/me1.png')
         p.verticalLine
-        p.right(ng-controller='ModalCtrl') The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division.<br><br>You can read more about me, or you can scroll down.<br><br>
-          button#btn.btn.btn-primary(ng-controller='BtnCtrl as btn', type='button', ng-model='singleModel', ng-click="open()")  More About Me and Résumé
+        p.right(ng-controller='ModalCtrl') I recently graduated from General Assembly's 10 week User Experience Design Immersive Program. Before pursuing a career in UX design, I worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division.<br><br>I wholeheartedly believe it's possible to have a positive impact on the world through empathetic design.<br><br>
+          button#btn.btn.btn-primary(ng-controller='BtnCtrl as btn', type='button', ng-model='singleModel', ng-click="open()")  More About Me
+          a(href='https://www.dropbox.com/s/dicsqh33smmcp42/ACResumeUX3.pdf?dl=0', target='_blank')
+            button.btn.rsmall Résumé
       section.module.parallax.parallax-2
         .container
           h1 stockickr
@@ -126,7 +128,7 @@ block body
             a(role='menuitem', tabindex='-1', href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank') Email
           li.divider(role='presentation')
           li.contact(role='presentation')
-            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/paaont6vwu47jlz/ACResumeUX2.docx?dl=0', target='_blank') Résumé         
+            a(role='menuitem', tabindex='-1', href='https://www.dropbox.com/s/dicsqh33smmcp42/ACResumeUX3.pdf?dl=0', target='_blank') Résumé         
     .mobileBody
       .mobileContent  
         .container-fluid
@@ -137,8 +139,9 @@ block body
           img.inline.ts.mobile(src='/images/me1.png')
           <br><br>
           p The course is 10 weeks long, and I am in my seventh week. Before pursuing a careeer in UX design I have previously worked as a front end developer, founded my own startup, worked in the finance industry, and was a Paratrooper in the US Army's 82nd Airborne Division. Inside you can read more about me and download my resume.<br><br>All the content on this site is an original Andrew Cunliffe creation.
-          button#btn.btn.btn-primary.mobile(type='button', ng-model='singleModel', ng-click="open()") More About Me and Résumé
-          p Or, you can scroll down.
+          button#btn.btn.btn-primary.mobile.about(type='button', ng-model='singleModel', ng-click="open()") More About Me
+          a(href='https://www.dropbox.com/s/dicsqh33smmcp42/ACResumeUX3.pdf?dl=0', target='_blank')
+            button.btn.rsmall Résumé
         .container-fluid.white#stockickr2(ng-controller='ModalCtrl2')
           h1 stockickr
           h4 Mobile Stock Trading Patform
@@ -172,20 +175,7 @@ block body
 
 
 
-  script(src='js/lib/angular/angular.js')
-  script(src='js/lib/angular/angular-route.js')
-  script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
-  script(src='js/lib/jquery/jquery-2.0.3.min.js')
-  script(src='js/bootstrap.min.js')
-  script(src='js/angular-scroll.min.js')
-  script(src='js/ui-bootstrap-tpls.min.js')
-  script(src='js/angular-file-upload.js')
-  script(src='js/jquery.scrollTo.js')
-  script(src='js/jquery.localScroll.js')
+  
 
   script.
     $(document).ready(function() {

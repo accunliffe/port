@@ -407,6 +407,20 @@ button.btn.btn-warning.resume {
   display: inline-block;
   margin: 10px 10px 10px 10px;
 }
+button.btn.rsmall {
+  background-color: rgba(240,173,78,0.9);
+  color: #fff;
+  position: relative;
+  height: 50px;
+  width: 120px !important;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
+@media screen and (max-width: 980px) {
+  button.btn.rsmall {
+    margin: 0px 10px 10px 10px;
+  }
+}
 button.btn.btn-warning.bottom {
   background-color: rgba(214,214,214,0.9);
   border-color: #fff;
@@ -553,6 +567,9 @@ img.logo5.mobile {
 button#btn.btn.btn-primary.mobile {
   margin-bottom: 40px;
   margin-top: 10px;
+}
+button#btn.btn.btn-primary.mobile.about {
+  margin-bottom: 20px !important;
 }
 img.inline.ts.mobile {
   max-width: 90%;
