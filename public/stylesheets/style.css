@@ -163,9 +163,10 @@ img.inline.ts {
 }
 img.inline.me {
   max-height: 700px;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 15px;
   margin-left: 5px;
+  margin-right: 5px;
 }
 img.inline.ts.main {
   max-height: 500px;
@@ -191,6 +192,7 @@ section.module h2 {
 section.module h3 {
   font-size: 40px;
   padding-bottom: 30px;
+  margin: 0 20px 0 20px;
 }
 section.module p {
   display: inline-block;
@@ -247,6 +249,11 @@ section.module.parallax {
     height: 800px;
   }
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (orientation: landscape) {
+  section.module.parallax {
+    height: 600px;
+  }
+}
 section.module.parallax.top {
   padding-top: 10%;
 }
@@ -258,6 +265,15 @@ section.module.parallax.top {
 @media only screen and (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2) {
   section.module.parallax.top {
     padding-top: 15%;
+  }
+  section.module.parallax.top h1 {
+    margin-bottom: 25%;
+    line-height: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (orientation: landscape) {
+  section.module.parallax.top {
+    padding-top: 10%;
   }
   section.module.parallax.top h1 {
     margin-bottom: 25%;
