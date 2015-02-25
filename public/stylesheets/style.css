@@ -158,12 +158,12 @@ img.inline.ts {
 }
 @media screen and (min-width: 900px) {
   img.inline.ts {
-    max-width: 40%;
+    max-width: 70%;
   }
 }
 img.inline.me {
   max-height: 700px;
-  max-width: 80%;
+  max-width: 50%;
   margin-top: 35px;
   margin-left: 5px;
   margin-right: 5px;
@@ -226,6 +226,7 @@ section.module p.right {
   text-align: left !important;
   padding-left: 20px;
   padding-right: 10px;
+  margin-top: 20px;
 }
 section.module.content {
   padding: 0 0;
@@ -493,7 +494,7 @@ p.moder1 {
 }
 p.moder2 {
   text-align: center;
-  margin: 30px auto 30px auto;
+  margin: 30px auto 15px auto;
   max-width: 1000px;
   font-size: 120%;
 }
@@ -588,5 +589,5 @@ button#btn.btn.btn-primary.mobile.about {
   margin-bottom: 20px !important;
 }
 img.inline.ts.mobile {
-  max-width: 90%;
+  max-width: 70%;
 }
